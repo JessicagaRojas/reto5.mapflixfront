@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilmsListComponent } from './components/films-list/films-list.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FilmsListComponent } from './components/films-list/films-list.component
     FooterComponent,
     FormularioComponent,
     FilmsListComponent,
+    ErrorComponent,
 
   ],
   imports: [

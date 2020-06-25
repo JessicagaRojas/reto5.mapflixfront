@@ -1,5 +1,6 @@
-/*import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 
 
 
@@ -7,6 +8,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FilmsListComponent } from './components/films-list/films-list.component';
+import { ErrorComponent } from './components/error/error.component'
 
 //Arrays de rutas
 const appRoutes: Routes = [
@@ -14,6 +17,8 @@ const appRoutes: Routes = [
   {path: 'header', component: HeaderComponent},
   {path: 'formulario', component: FormularioComponent},
   {path: 'footer', component: FooterComponent},
+  {path: 'filmslist', component: FilmsListComponent},
+  {path: '**', component: ErrorComponent}, //Debe ir siempre al final, es para "redirigir" los errores 
 
 ];
 
@@ -27,18 +32,6 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 
-*/
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { FilmsListComponent } from './components/films-list/films-list.component';
 
-
-const routes: Routes = [
-  {path:"display", component:FilmsListComponent}
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
 export class AppRoutingModule { }
+//export const AppRoutingModule:any [] = []
