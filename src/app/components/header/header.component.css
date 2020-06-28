@@ -2,13 +2,39 @@
     background-color: #5A3D55;
     display: flex;
     width: 80em;
-    height: 3.5em;
+    height: 4.5em;
 }
 
 .buttons {
-    background-color: whitesmoke;
+    background-color: #FFE0AC;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     border-radius: 10px;
+    margin-left: 2em;
+}
+
+.buttons:hover {
+    background-color: #F6D198;
+}
+
+#buscador {
+    width: 30em;
+    height: 1.8em;
+    margin-left: 2em;
+}
+
+#logo-header {
+    margin-left: 12em;
+    margin-top: 0.5em;
+}
+
+#video-header-contenedor {
+    display: flex;
+    width: 80em;
+    height: 350px;
+}
+
+#video-header {
+    margin-top: 1em;
 }

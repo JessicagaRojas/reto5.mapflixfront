@@ -2,6 +2,16 @@
 <app-header></app-header> 
 <!--Buscador de películas-->
 
+<div class="movies-resultado" *ngFor="let pelicula of MovieService.films">
+    <p>{{pelicula.title}}</p>
+    <a routerLink="/info" routerLinkActive="active-link">
+    <img width="200"height="288" (click)="MovieService.locateFilm(pelicula)"
+        src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}" 
+        alt="poster">
+    </a>
+
+</div>
+
 
 <div class="movies"> 
     <div *ngFor="let pelicula of pelisMostrar" class="peliculas"> 
@@ -12,17 +22,10 @@
             alt="poster">
         </a>
     </div>
-
-
-<div *ngFor="let pelicula of MovieService.films">
-    <p>{{pelicula.title}}</p>
-    <a routerLink="/info" routerLinkActive="active-link">
-    <img width="200"height="288" (click)="MovieService.locateFilm(pelicula)"
-        src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}" 
-        alt="poster">
-    </a>
-
 </div>
+
+
+
  
 <!--
 <a routerLink="" routerLinkActive="active-link"> 

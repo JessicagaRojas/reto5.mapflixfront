@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns:  repeat(4,1fr);
     color: black;
+    margin-top: 3em;
     .movie{
         background-color: rgb(243, 243, 243);
         display: flex;
@@ -19,4 +20,8 @@
             width: 200px;
         }
     }
+}
+
+.movies-resultado {
+    margin-top: 3.5em;
 }

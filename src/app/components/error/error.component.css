@@ -1,0 +1,7 @@
+.contenedor-error {
+    display: flex;
+    background-image: url(https://imgur.com/X3wAuOh);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
