@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { MoviesService } from '../../services/movies.service';//importación del servicio movieservice siguiendo la ruta de carpetas y archivos
+import { MovieService } from '../services/movie.service';//importación del servicio movieservice siguiendo la ruta de carpetas y archivos
 
 @Component({
   selector: 'app-films-list',
-  templateUrl: './films-list.component.html',
+  templateUrl: './films-list.component.html', //conexiones con los demás archivos del componente
   styleUrls: ['./films-list.component.css']
 })
 export class FilmsListComponent implements OnInit {
 
-  peliculasMostrar: object;
+  pelisMostrar: object; //creamos el objeto "peliculasMostrar"
 
-  constructor(public MoviesService:MoviesService) { }
+  constructor(public MovieService:MovieService) { }  //Hacemos referencia al archivo del Service -> MovieService
 
-  ngOnInit() {
-    this.MoviesService.getMovies()
+  ngOnInit() {  //Esto es el primer evento que se ejecutará en el componente
+    this.MovieService.getMovies()  //Función que hace referencia a la función "getmovies" del Backend
     .subscribe(
-      res => this.peliculasMostrar = res,
+      res => this.pelisMostrar = res, //Este "pelisMostrar" es el referenciado en el HTML de films-list
       error => console.error(error),
-      () => console.log(this.peliculasMostrar)
+      () => console.log(this.pelisMostrar)
     )
   }
 
