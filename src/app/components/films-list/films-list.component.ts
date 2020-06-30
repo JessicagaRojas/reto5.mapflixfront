@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService } from '../services/movie.service';//importación del servicio movieservice siguiendo la ruta de carpetas y archivos
+import { MovieService } from '../../services/movie.service';//importación del servicio movieservice siguiendo la ruta de carpetas y archivos
 
 @Component({
   selector: 'app-films-list',

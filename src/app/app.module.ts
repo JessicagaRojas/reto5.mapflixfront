@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http'; //Imprescindible para que funcionen las peticiones Ajax
+import { FormsModule } from '@angular/forms';  //imprescindible para que funcionen los formularios
 
 
 //Aquí van los fijos
@@ -29,7 +30,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
   imports: [ //Declaraciones de los imports de Angular por defecto
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

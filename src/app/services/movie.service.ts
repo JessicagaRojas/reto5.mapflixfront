@@ -29,3 +29,5 @@ getFilms():object[]{
     return this.films
  }
 }
+
+//subscribe nos permite recoger los datos que manda HTTP
