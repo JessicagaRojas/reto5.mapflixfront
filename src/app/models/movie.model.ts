@@ -1,7 +1,9 @@
 export interface Movie {
     id:number,
     title:string,
-    original_title:string
+    overview:Text,
+    poster_path: string,
+    popularity: Float32Array
 }
 
 /*

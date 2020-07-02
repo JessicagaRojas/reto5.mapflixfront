@@ -14,6 +14,7 @@ import { FilmsListComponent } from './components/films-list/films-list.component
 import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     ErrorComponent,
     DetailComponent,
     InicioComponent,
+    LoginComponent,
 
   ],
   imports: [ //Declaraciones de los imports de Angular por defecto

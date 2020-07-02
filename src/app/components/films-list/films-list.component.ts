@@ -7,12 +7,13 @@ import { MovieService } from '../../services/movie.service';//importación del s
   styleUrls: ['./films-list.component.css']
 })
 export class FilmsListComponent implements OnInit {
+  //page = 1;
 
   pelisMostrar: object; //creamos el objeto "peliculasMostrar"
 
   constructor(public MovieService:MovieService) { }  //Hacemos referencia al archivo del Service -> MovieService
 
-  ngOnInit() {  //Esto es el primer evento que se ejecutará en el componente
+  ngOnInit(): void {  //Esto es el primer evento que se ejecutará en el componente
     this.MovieService.getMovies()  //Función que hace referencia a la función "getmovies" del Backend
     .subscribe(
       res => this.pelisMostrar = res, //Este "pelisMostrar" es el referenciado en el HTML de films-list
@@ -20,5 +21,10 @@ export class FilmsListComponent implements OnInit {
       () => console.log(this.pelisMostrar)
     )
   }
+/*
+  nextPage() {
+    this.page++;
+    this.getByPage();
+  }*/
 
 }

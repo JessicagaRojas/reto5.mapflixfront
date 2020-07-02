@@ -12,15 +12,17 @@ import { FilmsListComponent } from './components/films-list/films-list.component
 import { ErrorComponent } from './components/error/error.component'
 import { DetailComponent } from './components/detail/detail.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { LoginComponent } from './components/login/login.component';
 
 //Arrays de rutas
 const routes: Routes = [
   //Esto son las rutas que escribiremos en el navegador
   {path: 'header', component: HeaderComponent},
-  {path: 'formulario', component: FormularioComponent},
+  {path: 'register', component: FormularioComponent},
   {path: 'footer', component: FooterComponent},
   {path: 'filmslist', component: FilmsListComponent},
   {path: 'detail', component: DetailComponent},
+  {path: 'login', component: LoginComponent},
   {path: "", component: InicioComponent},
   {path: '**', component: ErrorComponent}, //Debe ir siempre al final, es para "redirigir" los errores 
 

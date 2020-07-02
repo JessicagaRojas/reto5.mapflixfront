@@ -1,42 +1,18 @@
 
 
 
-<div class="center">
-    <section id="content">
-        <h1 class="subheader">NUEVO  USUARIO</h1>
-
-        <form class="mid-form" #userform="ngForm" (ngSubmit)="onSubmit()"> <!--#userform es el nombre del campo. ngForm para reactividad de form. Angular--> 
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="user.nombre" required/> <!--#nombre para nombre del campo. 
-                    Esto [()] se utiliza porque es bidireccional. Modifica los datos instantáneamente-->
-                
-
-             <small *ngIf="!nombre.valid && nombre.touched">El nombre no es válido</small>
-             <!--Esto se leería= Si "nombre" no es válido y además ha sido tocado, entonces muestra el mensaje de que no es válido -->
-            </div>
-
-            <div class="form-group">
-                 <label for="apellidos">Apellidos</label>
-                 <input type="text" name="apellidos" #apellidos="ngModel" [(ngModel)]="user.apellidos" required />
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" #email="ngModel" [(ngModel)]="user.email" required />
-           </div>
-
-            <div class="form-group radibuttons"> <!--Usamos el mismo ngModel para todos porque responden al campo género-->
-                <input type="radio" name="genero" value="Mujer" [(ngModel)]="user.genero" />Mujer
-                <input type="radio" name="genero" value="Hombre" [(ngModel)]="user.genero" />Hombre
-                <input type="radio" name="genero" value="Otro"[(ngModel)]="user.genero" />Otro
-            </div>
-
-            <div class="clearfix"></div>
-
-            <input type="submit" value="enviar" class="btn btn-succes"/>
-
-         </form>
-
-    </section>
-</div>
+<form class="registerForm" #registerForm="ngForm" (submit)="register(registerForm)">
+    <div class="alert alert-danger" *ngIf="errorMsg">{{errorMsg}}</div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputEmail1" name="name" ngModel placeholder="Introduce your name" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <input type="email" email required class="form-control" id="exampleInputEmail1" name="email" ngModel placeholder="Introduce your email" required email aria-describedby="emailHelp">
+        <div class="alert alert-danger" *ngIf="registerForm.submitted && registerForm.form.controls.email?.errors?.email"> El email no es válido</div>
+    </div>
+    <div class="form-group">
+        <input type="password" name="password" ngModel class="form-control" required placeholder="Introduce your password" id="exampleInputPassword1">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{{registerForm.value | json}}
