@@ -12,13 +12,13 @@ import { Movie } from '../models/movie.model';
 })
 export class MovieService {
   API_URL = environment.API_URL; //la usamos para conectar con nuestro backend a traves de esta url
-  private movies: Movie[] = [];
 
   films: object[];//creamos un objeto de array vacio que las coge todas
   filmChoosen: object[];//creamos un objeto de array vacio que son las que elegimos
   //title: string;
   constructor(private httpClient:HttpClient) { }
 
+  
   show20Pages(page: number): Observable<Movie[]> {
     // const headers = new HttpHeaders();
     // headers.set('authorization', localStorage.getItem('authToken'));
@@ -31,7 +31,7 @@ export class MovieService {
  
 
   getMovies():Observable<any>{
-    return this.httpClient.get(this.API_URL + 'allmovies')//en la siguiente direccion nos traemos todas las pelis
+    return this.httpClient.get(this.API_URL + '/movies/allmovies')//en la siguiente direccion nos traemos todas las pelis
   }
   locateFilm(filmChoose:any):object{//funcion para localizar las peliculas que elegimos
     this.filmChoosen = filmChoose; //Guardamos la peli escogida
@@ -45,7 +45,7 @@ setFilms(films:object[]):void{
     this.films=films;
     console.log(this.films)
  }
-getFilms():object[]{
+getFilms():object {
     return this.films
  }
 

@@ -2,6 +2,7 @@
 <app-header></app-header> 
 <!--Buscador de películas-->
 
+
 <div class="movies-resultado" *ngFor="let pelicula of MovieService.films">
     <p>{{pelicula.title}}</p>
     <a routerLink="/detail" routerLinkActive="active-link">
@@ -10,7 +11,7 @@
         alt="poster">
     </a>
 
-</div>
+</div> 
 
 
 <div class="movies"> 

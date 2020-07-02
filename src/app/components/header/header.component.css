@@ -29,12 +29,3 @@
     margin-top: 0.5em;
 }
 
-#video-header-contenedor {
-    display: flex;
-    width: 80em;
-    height: 350px;
-}
-
-#video-header {
-    margin-top: 1em;
-}

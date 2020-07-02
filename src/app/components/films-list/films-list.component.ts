@@ -13,7 +13,7 @@ export class FilmsListComponent implements OnInit {
 
   constructor(public MovieService:MovieService) { }  //Hacemos referencia al archivo del Service -> MovieService
 
-  ngOnInit(): void {  //Esto es el primer evento que se ejecutará en el componente
+  ngOnInit() {  //Esto es el primer evento que se ejecutará en el componente
     this.MovieService.getMovies()  //Función que hace referencia a la función "getmovies" del Backend
     .subscribe(
       res => this.pelisMostrar = res, //Este "pelisMostrar" es el referenciado en el HTML de films-list
