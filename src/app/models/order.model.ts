@@ -1,5 +1,10 @@
+export interface Order {
+  UserId:number,
+  MovieId:number,
+  RentalDay:Date,
+  ReturnDay:Date,
 
-
+}
 
 
 

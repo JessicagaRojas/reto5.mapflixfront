@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../../services/movie.service';//importación del servicio movieservice siguiendo la ruta de carpetas y archivos
+import { Movie } from '../movie-modal/movie-modal.component';
 
 @Component({
   selector: 'app-films-list',
@@ -8,8 +9,10 @@ import { MovieService } from '../../services/movie.service';//importación del s
 })
 export class FilmsListComponent implements OnInit {
   //page = 1;
+  showModal: boolean;
+  currentMovie: Movie;
 
-  pelisMostrar: object; //creamos el objeto "peliculasMostrar"
+  pelisMostrar: object; //creamos el objeto "pelisMostrar"
 
   constructor(public MovieService:MovieService) { }  //Hacemos referencia al archivo del Service -> MovieService
 
@@ -20,7 +23,18 @@ export class FilmsListComponent implements OnInit {
       error => console.error(error),
       () => console.log(this.pelisMostrar)
     )
+
+    
   }
+  showMovieModalDetail(movie: Movie): void {
+    this.showModal = true;
+    this.currentMovie = movie;
+  }  
+  closeMovieModalDetail(): void {
+    this.showModal = false;
+  }
+
+
 /*
   nextPage() {
     this.page++;

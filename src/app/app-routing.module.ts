@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: 'filmslist', component: FilmsListComponent},
   {path: 'detail', component: DetailComponent},
   {path: 'login', component: LoginComponent},
-  {path: "", component: InicioComponent},
+  {path: "inicio", component: InicioComponent},
   {path: '**', component: ErrorComponent}, //Debe ir siempre al final, es para "redirigir" los errores 
 
 ];

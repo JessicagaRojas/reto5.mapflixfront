@@ -41,11 +41,11 @@ export class MovieService {
 buscaPeliculasTitulo(titulo:string):Observable<any>{//guardamos dentro de esta funcion la url/title más el titulo de la pelicula
   return this.httpClient.get(this.API_URL + '/movies/title/' + titulo); //Endpoint del backend
 }
-setFilms(films:object[]):void{
+setFilms(films:object[]):void{  //método para cambiar la clase
     this.films=films;
     console.log(this.films)
  }
-getFilms():object {
+getFilms():object { //método para traer la clase
     return this.films
  }
 

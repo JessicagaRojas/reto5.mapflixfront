@@ -1,7 +1,11 @@
 .contenedor-error {
     display: flex;
-    background-image: url(https://imgur.com/X3wAuOh);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.error-fondo {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
