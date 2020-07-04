@@ -1,3 +1,4 @@
+
 .movies{
     display: grid;
     grid-template-columns:  repeat(4,1fr);
@@ -24,4 +25,24 @@
 
 .movies-resultado {
     margin-top: 3.5em;
+    border-radius: 50%;
+}
+
+.peliculas {
+    background-color: #E5CFE5;
+    margin-top: 5em;
+}
+
+.img-cajas {
+    border-radius: 10%;
+    border: cornsilk 3px solid;
+
+}
+
+.img-resultadoID {
+    display: grid;
+    flex-direction: row;
+    background-color: #E5CFE5;
+    margin-top: 8em;
+
 }

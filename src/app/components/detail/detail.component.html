@@ -1,6 +1,15 @@
+<div class="contenedor-general" >
+    <div id="contenedor-header">
+        <button class="buttons" id="boton-alquiler" routerLink="/formAlquiler" routerLinkActive="active-link"> Alquilar </button>
+        <img id="logo-cinta" src="../../../assets/IMG/logo_cinta_vhs_mapflix.png">
+    </div>
+
+
 
 <div class="pelicula">
-    <h3>Titulo: {{movieShow.title}}</h3>
-    <p>Overview: {{movieShow.overview}}</p>
-    <img width="200" height="288" src="https://image.tmdb.org/t/p/w200/{{movieShow.poster_path}}" alt="poster">
+    <h3 id="titulo-detail">Titulo: {{movieShow.title}}</h3>
+    <p id="overview-detail">Overview: {{movieShow.overview}}</p>
+    <img class="img-poster" width="200" height="288" src="https://image.tmdb.org/t/p/w200/{{movieShow.poster_path}}" alt="poster">
+</div>
+
 </div>

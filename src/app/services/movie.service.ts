@@ -49,6 +49,14 @@ getFilms():object { //método para traer la clase
     return this.films
  }
 
+ getPopularMovies():Observable<any> {
+  return this.httpClient.get(this.API_URL + '/movies/mostpopular');
+}
+//Peliculas años 2000-2010
+getdosMilFilms():Observable<any> {
+  return this.httpClient.get(this.API_URL + '/movies/dosMilmovies');
+}
+
 
 }
 

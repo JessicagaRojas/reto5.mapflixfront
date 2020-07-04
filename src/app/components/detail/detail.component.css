@@ -1,6 +1,78 @@
 .pelicula {
     height: 30em;
     width: 30em;
-    background: darkgrey;
-    margin-top: 3em;
+    background: #E5CFE5;
+    margin-top: 8em;
+    margin-right: 15em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.img-poster {
+margin-right: 1em;
+}
+
+#titulo-detail {
+    display: flex;
+    position: absolute;
+    margin-right: 2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#overview-detail {
+
+}
+
+
+
+/*  HEADER  */
+.contenedor-general {
+    background-color: #5A3D55;
+    display: flex;
+    flex-direction: row;
+    width: 80em;
+    height: 4.5em;
+    justify-content: center;
+}
+
+#contenedor-header {
+    display: flex;
+    justify-content: start;
+}
+
+
+.buttons {
+    background-color: #FFE0AC;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left: 2em;
+}
+
+#boton-alquiler {
+    display: flex;
+    position: absolute;
+    margin-right: 20em;
+}
+
+
+.buttons:hover {
+    background-color: #FBC687;
+}
+
+
+#logo-cinta {
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 55px;
+    margin-right: 3em;
+
+}
+
+#logo-m {
+    width: 300px;
+    height: 150px;
+}
+

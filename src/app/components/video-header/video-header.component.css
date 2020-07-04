@@ -1,5 +1,6 @@
 #video-header-contenedor {
     display: flex;
+    background-color: #E5CFE5;
     width: 80em;
     height: 350px;
 }

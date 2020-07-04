@@ -18,6 +18,8 @@ import { LoginComponent } from './components/login/login.component';
 import { VideoHeaderComponent } from './components/video-header/video-header.component';
 import { MovieModalComponent } from './components/movie-modal/movie-modal.component';
 import { FormAlquilerComponent } from './components/form-alquiler/form-alquiler.component';
+//import { DOSMILmoviesComponent } from './components/dosmilmovies/dosmilmovies.component';
+//import { POPULARmoviesComponent } from './popularmovies/popularmovies.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { FormAlquilerComponent } from './components/form-alquiler/form-alquiler.
     VideoHeaderComponent,
     MovieModalComponent,
     FormAlquilerComponent,
+    //DOSMILmoviesComponent,
+    //POPULARmoviesComponent,
 
   ],
   imports: [ //Declaraciones de los imports de Angular por defecto
