@@ -15,29 +15,31 @@ export class UserService {
   private user: User;
   constructor(private httpClient: HttpClient) { }
 
-  register(user: User): Observable<User> { 
-    return this.httpClient.post<User>(this.API_URL + '/users/signup', user); //Ruta para traer el endpoint de registro del backend (routes -> users.js)
+  register(user: User): Observable<User> {//funcion para el registro de usuarios
+    return this.httpClient.post<User>(this.API_URL + '/users/signup', user);//ruta en el backend para traer el endpoint
   }
-
-  login(credentials: Credentials): Observable<Login> {
-    return this.httpClient.post<Login>(this.API_URL + '/users/login', credentials); //Ruta para traer el endpoint de login del backend (routes -> users.js)
+  login(credentials: Credentials): Observable<Login> {//función para el login de usuarios
+    return this.httpClient.post<Login>(this.API_URL + '/users/login', credentials);//ruta en el backend para traer el endpoint
   }
-  setUser(user: User): void {  //Meter el usuario
+  setUser(user: User): void {//poner usuario
     this.user = user;
   }
-  getUser(): User { //Traer usuario
+  getUser(): User {//traerte a ese usuario
     return this.user;
   }
-
-  logout(): void {
-    this.httpClient.get(this.API_URL + '/users/logout', {
+  logout(): void {//salir de un sesion de usuario
+    this.httpClient.get(this.API_URL + '/users/logout',{//endpoint del backend para salir de una sesion de usuario
       headers: {
-        authorization: localStorage.getItem('authToken') //Llamamos al fichero auth del backend (middleware)
+        authorization: localStorage.getItem('authToken')
       }
     }).subscribe(console.log);
     this.setUser(null);
-    localStorage.removeItem('user');
-    localStorage.removeItem('authToken');
+    localStorage.removeItem('user');//quitamos el usuario de localstorage
+    localStorage.removeItem('authToken');//quitamos el token de localstorage
   }
-
 }
+
+
+
+
+

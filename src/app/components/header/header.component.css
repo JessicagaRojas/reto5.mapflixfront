@@ -48,3 +48,9 @@
     width: 300px;
     height: 150px;
 }
+
+.loginUser {
+    display: flex;
+    margin-left: 65em;
+
+}
