@@ -1,0 +1,48 @@
+.contenedor-dosmil-movies{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background-color: #E5CFE5;
+    margin-top: 5em;
+    justify-content: center;
+
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 7em;
+    margin-right: -8em;
+}
+
+
+.peliculas {
+    display: block;
+    margin-top: 10px;
+    margin-right: 3em;
+
+}
+
+.img-dosmil{
+    height: 250px;
+    margin-right: 6px;
+    transition: 1s ease all;
+    border-radius: 10%;
+    border: cornsilk 2px solid;
+    
+}
+
+.img-dosmil:hover{
+    background-color: wheat;
+}
+
+.h1 {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    color: #6E5773;
+    font-weight: bold;
+    font-family: monospace;
+}
+

@@ -54,7 +54,7 @@ getFilms():object { //método para traer la clase
 }
 //Peliculas años 2000-2010
 getdosMilFilms():Observable<any> {
-  return this.httpClient.get(this.API_URL + '/movies/dosMilmovies');
+  return this.httpClient.get(this.API_URL + '/movies/dosmilmovies');
 }
 
 

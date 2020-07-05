@@ -47,7 +47,7 @@
 .contenedor-logo-inicio{
     display:flex;
     width: 400px;
-    height: 500px;
+    height: 400px;
     background-color: #222831;
     opacity: 60%;
     border-radius: 5%;
@@ -59,7 +59,7 @@
 #logo-mapflix-login{
     display: flex;
     position: absolute;
-    margin-top: 20em;
+    margin-top: 15em;
     margin-left: -12em;
    
     

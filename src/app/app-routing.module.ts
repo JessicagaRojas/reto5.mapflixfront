@@ -14,8 +14,8 @@ import { DetailComponent } from './components/detail/detail.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormAlquilerComponent } from './components/form-alquiler/form-alquiler.component';
-//import { DOSMILmoviesComponent } from './components/dosmilmovies/dosmilmovies.component';
-//import { POPULARmoviesComponent } from './popularmovies/popularmovies.component';
+import { dosMilMoviesComponent } from './components/dosmilmovies/dosmilmovies.component';
+import { popularmoviesComponent } from './components/popularmovies/popularmovies.component';
 
 //Arrays de rutas
 const routes: Routes = [
@@ -28,8 +28,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: "inicio", component: InicioComponent},
   {path: "formAlquiler", component: FormAlquilerComponent},
-  //{path: "DOSMILmovies", component: DOSMILmoviesComponent},
-  //{path: "POPULARmovies", component: POPULARmoviesComponent},
+  {path: "dosmilmovies", component: dosMilMoviesComponent},
+  {path: "popularmovies", component: popularmoviesComponent},
   {path: '**', component: ErrorComponent}, //Debe ir siempre al final, es para "redirigir" los errores 
 
 ];

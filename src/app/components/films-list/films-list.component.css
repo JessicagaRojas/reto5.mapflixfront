@@ -1,28 +1,23 @@
 
 .movies{
-    display: grid;
-    grid-template-columns:  repeat(4,1fr);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+    background-color: #E5CFE5;
     color: black;
-    margin-top: 3em;
-    .movie{
-        background-color: rgb(243, 243, 243);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin: 1rem;
-        padding: 0.8rem;
-        border-radius: 0.7rem;
-        h2{
-            font-size: 1.2rem;
-        }
-        img{
-            border-radius:0.7rem;
-            width: 200px;
-        }
-    }
+    margin-top: 5em;
+    justify-content: center;
+
 }
 
+.movie h2{
+    font-size: 1.2rem;
+}
+.movie img{
+    border-radius:0.7rem;
+    width: 200px;
+}
 .movies-resultado {
     margin-top: 3.5em;
     border-radius: 50%;
@@ -36,6 +31,8 @@
 .img-cajas {
     border-radius: 10%;
     border: cornsilk 3px solid;
+    margin-right: 10px;
+
 
 }
 

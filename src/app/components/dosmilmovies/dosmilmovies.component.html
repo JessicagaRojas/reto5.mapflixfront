@@ -1,12 +1,16 @@
-<!--
-<div class="movies">
-    <div class="movie" *ngFor="let pelicula of MovieService.films">
-        <a routerLink="/detail" routerLinkActive="active-link">
-            <img width="200" height="288" (click)="MoviesService.locateMovies(pelicula)"
-            src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}"
-            alt="poster">
-        </a>
-        <p>{{pelicula.title}}</p>
-    </div>
 
-</div>-->
+<!--
+<app-movie-modal *ngIf="showModal" [showModal]="showModal" (closed)="closeMovieModalDetail()" [movie]="currentMovie"></app-movie-modal>-->
+ <div class="contenedor-dosmil-movies">
+     <h1 class="h1" ><br>2000's movies</h1>
+     <div class="movies">
+        <div class="peliculas" *ngFor="let pelicula of pelisMostrar">
+        
+         <a routerLink="/detail" routerLinkActive="active-link">
+         <img class="img-dosmil" width="200"height="288" (click)="showMovieModalDetail(pelicula)"
+                    src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}" 
+                    alt="poster">
+         </a>
+         </div>
+     </div>
+ </div>
