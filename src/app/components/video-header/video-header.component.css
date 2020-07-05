@@ -1,10 +1,11 @@
 #video-header-contenedor {
     display: flex;
-    background-color: #E5CFE5;
+    background-image: url(../../../assets/IMG/fondo_violeta.jpg);
     width: 100vw;
     height: 350px;
 }
 
 #video-header {
+    background-color: #2F416D;
     margin-top: 1em;
 }

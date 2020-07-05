@@ -2,15 +2,14 @@
     display: flex;
     width: 100vw;
     height: 80vh;
-    background-color: #E5CFE5;
-    margin-top: 5em;
-    justify-content: center;
+    background-image: url(../../../assets/IMG/fondo_violeta.jpg);
 
 }
 
 .movies {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100vw;
     margin-top: 7em;
     margin-right: -8em;
@@ -24,7 +23,7 @@
 
 }
 
-.img-dosmil{
+.img-popular{
     height: 250px;
     margin-right: 6px;
     transition: 1s ease all;
@@ -33,7 +32,7 @@
     
 }
 
-.img-dosmil:hover{
+.img-popular:hover{
     background-color: wheat;
 }
 
@@ -41,7 +40,9 @@
     display: flex;
     position: absolute;
     width: 400px;
-    color: #6E5773;
+    color: white;
     font-weight: bold;
     font-family: monospace;
+    margin-top: 1em;
+    margin-right: -2em;
 }

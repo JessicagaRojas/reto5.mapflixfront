@@ -3,11 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 80vh;
-    background-color: #E5CFE5;
+    height: 150vh;
+    background-image: url(../../../assets/IMG/fondo-violeta5.jpg) ; 
     color: black;
-    margin-top: 5em;
-    justify-content: center;
 
 }
 
@@ -24,8 +22,9 @@
 }
 
 .peliculas {
-    background-color: #E5CFE5;
-    margin-top: 5em;
+    margin-top: 8em;
+    justify-content: center;
+
 }
 
 .img-cajas {
@@ -36,10 +35,31 @@
 
 }
 
-.img-resultadoID {
-    display: grid;
-    flex-direction: row;
-    background-color: #E5CFE5;
-    margin-top: 8em;
 
+.h1 {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 1em;
+}
+
+.movies-resultadoID{
+    display: flex;
+    justify-content: center;
+    background-color: #2F416D;
+    margin-top: 5em;
+
+}
+
+
+.img-resultadoID{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    margin-top: 2em;
+    margin-right: 15px;
+     border: cornsilk 3px solid;
 }

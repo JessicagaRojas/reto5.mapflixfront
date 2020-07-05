@@ -2,8 +2,7 @@
     display: flex;
     width: 100vw;
     height: 80vh;
-    background-color: #E5CFE5;
-    margin-top: 5em;
+    background-image: url(../../../assets/IMG/fondo_violeta.jpg);
     justify-content: center;
 
 }
@@ -41,8 +40,19 @@
     display: flex;
     position: absolute;
     width: 300px;
-    color: #6E5773;
+    color: whitesmoke;
     font-weight: bold;
     font-family: monospace;
 }
 
+
+#logo-cinta-registro{
+    display: flex;
+    position: absolute;
+    margin-top: -45em;
+    margin-left: 70em;
+}
+
+#logo-cinta-registro:hover {
+    background-color: #D8B9C3;
+}

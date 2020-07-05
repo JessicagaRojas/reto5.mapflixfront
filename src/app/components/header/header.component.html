@@ -2,22 +2,29 @@
 <div class="contenedor-general" >
     <div>
          <input type="text" name="" id="buscador" placeholder="Escribe un título" (keyup)="buscaTitulo($event)">
-         <button class="buttons" id="boton-alquiler" routerLink="/formAlquiler" routerLinkActive="active-link"> Alquilar </button>
+         <button class="buttons" id="boton-dosmil" routerLink="/dosmilmovies" routerLinkActive="active-link"> 2000's </button>
          <!--<button class="buttons" id="boton-login" routerLink="/login" routerLinkActive="active-link"> Entra </button>-->
+         <div class="buttons3" *ngIf="getUser() as user">
+            <button id="boton-logeado2" routerLink="/profile" routerLinkActive="active-link">{{user.name || user.email}}</button>
+            <button id="boton-logout2" routerLinkActive="active-link" (click)="logout()">logout</button>
+        </div>
 
          <!--<button class="buttons" id="boton-user"> Usuario </button>-->
          <!-- <a [routerlink]="['/formulario']" [routerLinkActive]="['active']">Form</a> -->
-         <img id="logo-m" src="../../../assets/IMG/logo_M_mapflix.png">
-        
-         <div class="guestZone" *ngIf="!getUser()">
-             <li><a routerLink="/login" routerLinkActive="active-link">Login</a></li>
-             <li><a routerLink="/signup" routerLinkActive="active-link">Signup</a></li>
-         </div>
-         <div class="loginUser" *ngIf="getUser() as user">
-             <button class="buttons" id="boton-logeado" routerLink="/profile" routerLinkActive="active-link">{{user.name || user.email}}</button>
-             <button class="buttons" id="boton-logout" routerLinkActive="active-link" (click)="logout()">logout</button>
-         </div>
-
+         <img id="logo-m" src="../../../assets/IMG/logo_mapflix.png">
+         <ul>
+            <!-- <li><a routerLink="/login" routerLinkActive="active-link">Login</a></li>
+            <li><a routerLink="/signup" routerLinkActive="active-link">Signup</a></li> -->
+            <!--
+            <div class="guestZone" *ngIf="!getUser()">
+                <li><a routerLink="/login" routerLinkActive="active-link">Login</a></li>
+                <li><a routerLink="/signup" routerLinkActive="active-link">Signup</a></li>
+            </div>
+            <div class="userZone" *ngIf="getUser() as user">
+                <li><a routerLink="/profile" routerLinkActive="active-link">{{user.name || user.email}}</a></li>
+                <li class="pointer"><a (click)="logout()" routerLinkActive="active-link">Logout</a></li>
+            </div>-->
+        </ul>
      </div>
  
  </div>

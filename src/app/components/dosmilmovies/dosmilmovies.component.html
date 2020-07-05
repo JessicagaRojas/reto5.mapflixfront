@@ -1,16 +1,20 @@
 
-<!--
-<app-movie-modal *ngIf="showModal" [showModal]="showModal" (closed)="closeMovieModalDetail()" [movie]="currentMovie"></app-movie-modal>-->
+<app-header></app-header>
+
+<div>
+<app-movie-modal *ngIf="showModal" [showModal]="showModal" (closed)="closeMovieModalDetail()" [movie]="currentMovie"></app-movie-modal>
  <div class="contenedor-dosmil-movies">
      <h1 class="h1" ><br>2000's movies</h1>
      <div class="movies">
         <div class="peliculas" *ngFor="let pelicula of pelisMostrar">
         
-         <a routerLink="/detail" routerLinkActive="active-link">
          <img class="img-dosmil" width="200"height="288" (click)="showMovieModalDetail(pelicula)"
                     src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}" 
                     alt="poster">
-         </a>
+        
          </div>
      </div>
+ </div>
+ <img id="logo-cinta-registro" src="../../../assets/IMG/logo_cinta_vhs_mapflix.png" alt="" width="120px" height="70px" routerLink="/filmslist" routerLinkActive="active-link" >   
+
  </div>
