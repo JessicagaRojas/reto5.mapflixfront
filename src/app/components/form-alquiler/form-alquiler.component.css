@@ -1,0 +1,111 @@
+.contenedor-form-alquiler{
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    justify-content: center;
+}
+
+.alquiler-pelicula{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    margin-top: 12em;
+    margin-left: 5em;
+}
+
+.alquiler-nombre{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    margin-top: 16em;
+    margin-left: 5em;
+}
+
+.alquiler-email{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    margin-top: 20em;
+    margin-left: 5em;
+}
+
+.input-fecha-alquiler{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    margin-top: 24em;
+    margin-left: 5em;
+}
+
+.input-fecha-devo{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    margin-top: 28em;
+    margin-left: 5em;
+}
+
+
+.boton-submit-alquiler{
+    display: flex;
+    position: absolute;
+    margin-top: 32em;
+    margin-left: 9em;
+    border-radius: 20%;
+    background-color: #512B58;
+    color: lavender;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boton-submit-alquiler:hover {
+    background-color: #827397;
+}
+
+.contenedor-logo-alquiler{
+    display:flex;
+    width: 400px;
+    height: 450px;
+    background-color: #222831;
+    opacity: 60%;
+    border-radius: 5%;
+    margin-top: 10em;
+    margin-left: -30em;
+
+}
+
+.lista-alquiler{
+    width: 300px;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 1.5em;
+}
+
+#logo-mapflix-registro{
+    display: flex;
+    position: absolute;
+    margin-top: 21em;
+    margin-left: -10.5em;
+}
+
+
+#logo-cinta-registro{
+    display: flex;
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 23em;
+}
+
+#logo-cinta-registro:hover {
+    background-color: #D8B9C3;
+}
+
+.texto-boton-principal{
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-top: 3em;
+    margin-left: 28em;
+
+}

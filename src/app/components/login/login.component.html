@@ -2,12 +2,29 @@
 
 
 
-<form class="loginForm" #loginForm="ngForm" (submit)="login(loginForm)">
-    <div class="form-group">
-        <input type="email" email required class="form-control" id="exampleInputEmail1" name="email" ngModel placeholder="Introduce your email" aria-describedby="emailHelp">
-    </div>
-    <div class="form-group">
-        <input type="password" name="password" ngModel class="form-control" required placeholder="Introduce your password" id="exampleInputPassword1">
-    </div>
-    <button type="submit" class="btn btn-primary"routerLink="/filmslist" routerLinkActive="active-link">Submit</button>
+<form class="contenedor-login" #loginForm="ngForm" (submit)="login(loginForm)">
+    <div class="contenedor-logo-inicio">
+        <ul class="lista-login">
+            <li class="lista-login">Alquiler GRATUITO</li>
+            <li class="lista-login">Sin cuotas</li>
+            <li class="lista-login">Sin Compromiso</li>
+            <li class="lista-login">¡Únete!</li>
+        </ul>
+     </div>
+     <img id="logo-mapflix-login" src="../../../assets/IMG/logo_mapflix_2.png" alt="" width="800px" height="450px">
+
+
+     <div class="contenedor-email-login">
+         <input type="email" email required class="input-password-email" name="email" ngModel placeholder="Introduce tu email" aria-describedby="emailHelp">
+     </div>
+     <div class="contenedor-password-login">
+         <input type="password" name="password" ngModel class="input-password-login" required placeholder="Introduce tu contraseña">
+     </div>
+     <button type="submit" class="boton-submit-login"routerLink="/filmslist" routerLinkActive="active-link">Submit</button>
+
+
+    
 </form>
+
+
+

@@ -1,8 +1,8 @@
 .contenedor-general {
-    background-color: #5A3D55;
+    background-color: #6E5773;
     display: flex;
     flex-direction: row;
-    width: 80em;
+    width: 100vw;
     height: 4.5em;
 }
 
@@ -22,7 +22,7 @@
 #buscador {
     width: 30em;
     height: 1.8em;
-    margin-left: 8em;
+    margin-left: 11em;
     margin-top: 1.2em;
 }
 
@@ -36,22 +36,27 @@
     height: 150px;
 }
 
+/*
 #logo-cinta {
     display: flex;
     width: 100px;
     height: 55px;
-    margin-top: -3em;
-    margin-left: 0.5em;
+    margin-top: -4.6em;
+    margin-left: 53em;
 }
+*/
 
 #logo-m {
-    width: 300px;
-    height: 150px;
+    display: flex;
+    width: 180px;
+    height: 80px;
+    margin-top: -3.5em;
+    margin-left: 0.2em;
 }
 
 .loginUser {
     display: flex;
-    margin-left: 65em;
-    margin-top: -3em;
+    margin-left: 80vw;
+    margin-top: -3.8em;
 
 }

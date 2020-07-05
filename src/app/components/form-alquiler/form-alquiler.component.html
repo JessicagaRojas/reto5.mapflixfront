@@ -1,24 +1,45 @@
-<form> 
-    <div class="form-row" >
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">ID película</label>
-      </div>
+<app-header></app-header>
 
-    </div>
-    <div class="form-group">
-      <label for="inputAddress">User name</label>
-    </div>
 
-    <div class="form-group">
-      <label for="inputAddress2">día de alquiler</label>
-      <input type="date" class="form-control" id="inputAddress2">
-    </div>
+<form class="contenedor-form-alquiler"> 
 
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">fecha de devolución</label>
-        <input type="date" class="form-control" id="inputCity">
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary" (click)="createOrder()" >Alquilar</button><!--  -->
-  </form>
+   <div class="contenedor-logo-alquiler">
+     <ul class="lista-alquiler">
+        <li class="lista-alquiler">Alquila sin límite de fecha</li>
+        <li class="lista-alquiler">Tampoco pasa nada si no la devuelves</li>
+        <br>
+        <li class="lista-">¡Disfruta!</li>
+     </ul>
+ </div>
+
+ <img id="logo-mapflix-registro" src="../../../assets/IMG/logo_mapflix_2.png" alt="" width="800px" height="450px">
+
+        
+     <div class="form-alquiler">
+         <input type="number" class="alquiler-pelicula" name="name" ngModel placeholder="Introduce ID película">
+     </div>
+
+     <div class="alquiler-registro">
+        <input type="text" required class="alquiler-nombre" name="name" ngModel placeholder="Introduce tu nombre">
+     </div>
+
+     <div class="alquiler-registro">
+         <input type="text" required class="alquiler-email" name="email" ngModel placeholder="Introduce tu email">
+     </div>
+
+     <div class="alquiler-registro">
+         <input type="date" class="input-fecha-alquiler" placeholder="Fecha de alquiler">
+     </div>
+
+     <div class="form-row">
+         <div class="form-group col-md-6">
+             <input type="date" class="input-fecha-devo" placeholder="Fecha de devolución">
+         </div>
+     </div>
+      
+    <button type="submit" class="boton-submit-alquiler" (click)="createOrder()" >Enviar</button>
+
+       <img id="logo-cinta-registro" src="../../../assets/IMG/logo_cinta_vhs_mapflix.png" alt="" width="120px" height="70px" routerLink="/filmslist" routerLinkActive="active-link" >   
+
+
+ </form>

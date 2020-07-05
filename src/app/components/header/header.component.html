@@ -1,25 +1,24 @@
 
 <div class="contenedor-general" >
     <div>
-        <input type="text" name="" id="buscador" placeholder="Escribe un título" (keyup)="buscaTitulo($event)">
-        <button class="buttons" id="boton-alquiler"> Alquilar </button>
-        <!--<button class="buttons" id="boton-user"> Usuario </button>-->
-       <!-- <a [routerlink]="['/formulario']" [routerLinkActive]="['active']">Form</a> -->
-        <img id="logo-cinta" src="../../../assets/IMG/logo_cinta_vhs_mapflix.png">
-
+         <input type="text" name="" id="buscador" placeholder="Escribe un título" (keyup)="buscaTitulo($event)">
+         <button class="buttons" id="boton-alquiler" routerLink="/formAlquiler" routerLinkActive="active-link"> Alquilar </button>
+         <!--<button class="buttons" id="boton-user"> Usuario </button>-->
+         <!-- <a [routerlink]="['/formulario']" [routerLinkActive]="['active']">Form</a> -->
+         <img id="logo-m" src="../../../assets/IMG/logo_M_mapflix.png">
         
-        <div class="guestZone" *ngIf="!getUser()">
-            <li><a routerLink="/login" routerLinkActive="active-link">Login</a></li>
-            <li><a routerLink="/signup" routerLinkActive="active-link">Signup</a></li>
-        </div>
-        <div class="loginUser" *ngIf="getUser() as user">
-            <button class="buttons" id="boton-logeado" routerLink="/profile" routerLinkActive="active-link">{{user.name || user.email}}</button>
-            <button class="buttons" id="boton-logout" routerLinkActive="active-link" (click)="logout()">logout</button>
-       </div>
+         <div class="guestZone" *ngIf="!getUser()">
+             <li><a routerLink="/login" routerLinkActive="active-link">Login</a></li>
+             <li><a routerLink="/signup" routerLinkActive="active-link">Signup</a></li>
+         </div>
+         <div class="loginUser" *ngIf="getUser() as user">
+             <button class="buttons" id="boton-logeado" routerLink="/profile" routerLinkActive="active-link">{{user.name || user.email}}</button>
+             <button class="buttons" id="boton-logout" routerLinkActive="active-link" (click)="logout()">logout</button>
+         </div>
 
-    </div>
-
-</div>
+     </div>
+ 
+ </div>
 
 
 

@@ -27,4 +27,9 @@ export class FormularioComponent {
       .subscribe(console.log); //Imprescindible 
   }
 
+  onSubmit(){
+    alert("¡Gracias por registrarte!");
+  }
+
+
 }
