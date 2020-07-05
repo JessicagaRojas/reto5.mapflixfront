@@ -3,19 +3,19 @@
 
 Backend de un buscador de películas. Desde la API The Movie Database(TMDb).
 
-_PASO 1. Clona el repositorio en la terminal de tu programa, con el comando "git clone URL":_
+    -PASO 1. Clona el repositorio en la terminal de tu programa, con el comando "git clone URL":-
 
 git clone https://github.com/JessicagaRojas/Reto4.Videoclub_Mapflix.git
 
--PASO 2. Colócate dentro de la carpeta raíz del repositorio, con el siguiente comando:-
+    -PASO 2. Colócate dentro de la carpeta raíz del repositorio, con el siguiente comando:-
 
 cd Reto4.Videoclub_Mapflix
 
--PASO 3. Descarga las dependencias y librerías del package.json, con el comando:-
+    -PASO 3. Descarga las dependencias y librerías del package.json, con el comando:-
 
 npm install
 
--PASO 4. Arranca el servidor con el comando:-
+    -PASO 4. Arranca el servidor con el comando:-
 
 npm start
 
@@ -23,13 +23,13 @@ npm start
 ## Instalación Frontend 🛠️
 
 clone
--git clone https://github.com/GeeksHubsAcademy/MEAN-auth-
+    -git clone https://github.com/GeeksHubsAcademy/MEAN-auth-
 
 instalation
--npm install-
+    -npm install-
 
 run the app
--npm start-
+    -npm start-
 
 
 ## MapflixFrontend 📌
